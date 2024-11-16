@@ -1,0 +1,160 @@
+định nghĩa:
+bộ lọc số 1
+	lọc theo trạng thái xóa
+	tìm kiếm từ khóa
+→ reset lọc
+bộ lọc số 2
+	lọc theo
+		trạng thái xóa
+		giới tính
+		trạng thái làm việc (đang làm, đã nghỉ)
+	tìm kiếm từ khóa
+→ reset lọc
+
+đăng nhập
+	email
+	mật khẩu
+	tùy chọn ghi nhớ đăng nhập
+	đăng nhập
+header
+	
+navigation bar bên trái	
+nhân viên
+	(bộ lọc số 2)
+	bảng hiển thị gồm: mã nhân viên, họ và tên, email, số điện thoại, giới tính, trạng thái
+		bấm vào sẽ dẫn đến trang chỉnh sửa theo nhân viên
+			thưởng phạt
+			ứng lương
+			nhận lương
+			nghỉ việc
+			chấm công
+			khung chỉnh sửa thông tin nhân viên
+				họ và tên
+				giới tính
+				trạng thái làm việc
+				ngày sinh
+				hệ số lương
+				phòng ban và chức vụ
+				bậc lương
+				bằng cấp
+				ngoại ngữ
+				chuyên môn
+				tôn giáo
+				dân tộc
+				số điện thoại
+				căn cước công dân
+				địa chỉnh
+				quên quán
+				ảnh đại diện
+				xóa nhân viên
+				cập nhật
+			bảng bảo hiểm
+				bảng hiển thị gồm: mã số, loại bảo hiểm, ngày cấp, ngày hết hạn, mức đóng
+					bấm vào sẽ dẫn đến trang chỉnh sửa theo nhân viên
+				thêm mới
+			bảng hợp đồng
+				bảng hiển thị gồm: mã hợp đồng, loại hợp đồng, ngày bắt đầu, ngày kết thúc
+					bấm vào sẽ dẫn đến trang chỉnh sửa theo nhân viên
+				thêm mới
+hệ số (*hạn chế set cứng, nên có lựa chọn thêm hệ số)
+	lương cơ bản
+	hệ số bậc 1-10
+phụ cấp
+	(bộ lọc số 1)
+	tạo mới
+		phòng ban
+		chức vụ
+		hệ số phụ cấp
+	bảng hiển thị gồm: tên phòng ban, tên chức vụ, hệ số phụ cấp
+		bấm vào từng hàng trong bảng sẽ dẫn đến trang chỉnh sửa
+			phòng ban
+			chức vụ
+			hệ số phụ cấp
+			xóa phụ cấp (có thể khôi phục)
+ứng lương
+	(bộ lọc số 1)
+	bảng hiển thị gồm: mã nhân viên, họ và tên, số tiền, tháng ứng
+		bấm vào từng hàng trong bảng sẽ dẫn đến trang chỉnh sửa theo nhân viên
+			lý do ứng tiền
+			số tiền cần ứng
+			tháng ứng lương
+			xóa ứng lương (có thể khôi phục)
+			cập nhật
+bảo hiểm
+	(bộ lọc số 1)
+	bảng hiển thị gồm: họ và tên, loại bảo hiểm, mã số, ngày cấp, ngày hết hạn, mức đóng
+		bấm vào từng hàng trong bảng sẽ dẫn đến trang chỉnh sửa theo nhân viên
+			mã số
+			loại bảo hiểm
+			nơi cấp
+			ngày cấp
+			ngày hết hạn
+			có tính vào lương tháng này không
+			mức đóng
+			xóa bảo hiểm (có thể khôi phục)
+			cập nhật
+hợp đồng 
+	(bộ lọc số 1)
+	bảng hiển thị gồm: mã hợp đồng, họ và tên, loại hợp đồng, mã số, ngày bắt đầu, ngày kết thúc
+		bấm vào từng hàng trong bảng sẽ dẫn đến trang chỉnh sửa theo nhân viên
+			loại hợp đồng
+			ngày bắt đầu
+			ngày kết thúc
+			xóa hợp đồng (có thể khôi phục)
+			cập nhật
+nghỉ việc
+	(bộ lọc số 1)
+	bảng hiển thị gồm: mã nhân viên, họ và tên, hưởng lương, ngày bắt đầu, 
+		bấm vào từng hàng trong bảng sẽ dẫn đến trang chỉnh sửa theo nhân viên
+			hưởng lương
+			lý do
+			ngày bắt đầu
+			ngày kết thúc
+			xóa nghỉ việc (có thể khôi phục)
+			cập nhật
+thưởng phạt
+	(bộ lọc số 1)
+	bảng hiển thị gồm: mã nhân viên, họ và tên, loại (thưởng, phạt), số tiền, ngày áp dụng
+		bấm vào từng hàng trong bảng sẽ dẫn đến trang chỉnh sửa theo nhân viên
+			hình thức
+			lý do
+			số tiền
+			áp dụng tháng nào
+			xóa thưởng (có thể khôi phục)
+			cập nhật
+khấu trừ
+	(bộ lọc số 1)
+	bảng hiển thị gồm: mã nhân viên, họ và tên, loại bảo hiểm, mức đóng, tháng đóng
+		bấm vào từng hàng trong bảng sẽ dẫn đến trang chỉnh sửa theo nhân viên
+			mức đóng
+			loại bảo hiểm
+			ngày đóng
+			xóa khấu trừ (có thể khôi phục)
+			cập nhật
+chấm công
+	(bộ lọc số 1)
+	cập nhật trạng thái chấm công
+	bảng hiển thị gồm: mã nhân viên, họ và tên, email, chức năng chấm công
+		bấm vào từng hàng trong bảng sẽ dẫn đến trang chi tiết nhân viên
+nhận lương
+	(bộ lọc số 1)
+	bảng hiển thị gồm: mã nhân viên, họ và tên, thực lĩnh, tháng nhận
+		bấm vào sẽ dẫn đến trang chỉnh sửa theo nhân viên
+			tháng nhận
+			ngày công chuẩn
+			hệ số lương
+			hệ số phụ cấp
+			khẩu trừ
+			lương cơ bản
+			phụ cấp
+			mức lương
+			ngày công
+			ngày nghỉ hưởng lương
+			ngày nghỉ không hưởng lương
+			tiền thưởng
+			tiền phạt
+			tạm ứng
+			thực lĩnh
+			xóa nhận lương (có thể khôi phục)
+			cập nhật
+	xuất file excel
