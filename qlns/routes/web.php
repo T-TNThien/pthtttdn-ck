@@ -52,8 +52,15 @@ Route::delete('logout', [AuthenticatedSessionController::class, 'destroy'])
 // Dashboard
 
 Route::get('/', function () {
-    return redirect('/nhanvien');
+    $user = Auth::user(); // Get the authenticated user
+
+    if ($user->role === 0) { // Check if the user's role is 0
+        return redirect("/chamcong?nhanvien={$user->id}"); // Redirect to their edit page
+    }
+
+    return redirect('/nhanvien'); // Redirect to /nhanvien if role is not 0
 })->middleware('auth');
+
 
 
 // Users

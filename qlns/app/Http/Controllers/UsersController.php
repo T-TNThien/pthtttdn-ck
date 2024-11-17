@@ -47,14 +47,26 @@ class UsersController extends Controller
 
     public function update(User $user)
     {
+        $authenticatedUser = Auth::user(); // Get the authenticated user
+
+        // Validate the request data
         Request::validate([
             'email' => ['required', 'max:50', 'email', Rule::unique('users')->ignore($user->id)],
             'password' => ['nullable'],
-            'role' => ['required', 'between:0,2']
+            'role' => ['required', 'integer', 'between:0,2']
         ]);
 
+        $newRole = Request::get('role');
+
+        // Check if the authenticated user's role is higher or equal to the new role
+        if ($newRole > $authenticatedUser->role) {
+            return Redirect::back()->with('error', 'Bạn không thể đặt quyền cao hơn quyền của bạn.');
+        }
+
+        // Update email and role
         $user->update(Request::only('email', 'role'));
 
+        // Update password if provided
         if (Request::get('password')) {
             $user->update(['password' => Request::get('password')]);
         }

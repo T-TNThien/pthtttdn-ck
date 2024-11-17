@@ -10,14 +10,54 @@ bộ lọc số 2
 		trạng thái làm việc (đang làm, đã nghỉ)
 	tìm kiếm từ khóa
 → reset lọc
+bộ lọc số 3
+	lọc theo 
+		trạng thái xóa
+		quyền hạn
+	tìm kiếm từ khóa
+→ reset lọc
 
-đăng nhập
-	email
-	mật khẩu
-	tùy chọn ghi nhớ đăng nhập
-	đăng nhập
-header
-	
+Đăng nhập
+Email
+Mật khẩu
+Tùy chọn ghi nhớ đăng nhập
+Đăng nhập
+
+Header
+	Logo, nếu bấm vào sẽ dẫn đến trang nhân viên
+	Tên công ty
+	Tên người dùng, bấm vào sẽ hiện menu điều hướng có các lựa chọn:
+		Hồ sơ người dùng
+		Lịch sử chấm công
+		Cài đặt tài khoản
+		Đăng xuất
+		Quản lý các nhóm thông tin:
+			Phòng ban
+			Chức vụ
+			Bằng cấp
+			Chuyên môn
+			Ngoại ngữ
+			Dân tộc
+			Tôn giáo
+			Loại bảo hiểm
+				Các nhóm trên sẽ có các lựa chọn:
+					(bộ lọc số 1)
+					Tạo mới
+					Bảng hiển thị tên thông tin
+						Bấm vào sẽ dẫn đến trang chỉnh sửa theo thông tin
+							Tên thông tin
+							Xóa thông tin (có thể khôi phục)
+							Cập nhật
+			Người dùng
+				(bộ lọc số 3)
+				Tạo mới
+				Bảng hiển thị tên thông tin
+					Bấm vào sẽ dẫn đến trang chỉnh sửa theo thông tin
+						Tên thông tin
+						Xóa thông tin (có thể khôi phục)
+						Cập nhật
+
+
 navigation bar bên trái	
 nhân viên
 	(bộ lọc số 2)
@@ -158,3 +198,28 @@ nhận lương
 			xóa nhận lương (có thể khôi phục)
 			cập nhật
 	xuất file excel
+
+Chức vụ quản lý:
+	Navigation bar bên trái:
+		Không có các lựa chọn:
+			Hệ số
+			Phụ cấp
+			Chấm công
+	Header:
+		Tên người dùng:
+			Menu điều hướng:
+				Không có các lựa chọn:
+					Quản lý các nhóm thông tin:
+						Phòng ban
+						Chức vụ
+						Bằng cấp
+						Chuyên môn
+						Ngoại ngữ
+						Dân tộc
+						Tôn giáo
+						Loại bảo hiểm
+						Người dùng
+Chức vụ nhân viên:
+	Navigation bar bên trái:
+		Trống
+	
